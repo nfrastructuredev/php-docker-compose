@@ -8,7 +8,7 @@
  */
 
 
-namespace NfrastructureTest\Composer;
+namespace NfrastructureTest\ComposerTest;
 
 use Composer\Script\Event;
 use Nfrastructure\Composer\CreateCompose;

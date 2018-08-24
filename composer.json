@@ -1,7 +1,6 @@
 {
   "name": "nfrastructure/php-docker-compose",
   "description": "Creates a docker-compose file using composer",
-  "type": "composer-plugin",
   "license": "MIT",
   "authors": [
     {
@@ -19,7 +18,7 @@
       "Nfrastructure\\Composer\\": "tests/"
     }
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "readme": "README.md",
   "minimum-stability": "stable",
   "require": {
@@ -30,8 +29,9 @@
     "zendframework/zend-json": "^3.1"
   },
   "require-dev": {
-    "phpunit/phpunit": "^7.3",
-    "mockery/mockery": "^1.1"
+    "mikey179/vfsStream": "^1.6",
+    "mockery/mockery": "^1.1",
+    "phpunit/phpunit": "^7.3"
   },
   "scripts": {
     "check": [
@@ -42,5 +42,7 @@
     "cs-fix": "phpcbf",
     "test": "phpunit --colors=always",
     "test-coverage": "phpunit --colors=always --coverage-clover clover.xml"
+  },
+  "extra": {
   }
 }
