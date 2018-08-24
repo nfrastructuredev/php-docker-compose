@@ -1,0 +1,13 @@
+version: '3'
+services:
+    php:
+        container_name: my_php
+        image: php
+        expose:
+            - '9001'
+        environment:
+            PHP_XDEBUG_ENABLED: '1'
+            XDEBUG_CONFIG: 'remote_enable=1 remote_mode=req remote_port=9001 remote_connect_back=0 remote_host=10.129.8.110'
+            FOO: '{{ BAR }}'
+        volumes:
+            - './:/var/www'

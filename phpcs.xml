@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<ruleset name="nfrastructure coding standard">
+    <rule ref="./vendor/nfrastructure/nfrastructure-coding-standards/ruleset.xml"/>
+
+    <!-- Paths to check -->
+    <file>src</file>
+    <file>tests</file>
+</ruleset>
